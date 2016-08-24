@@ -19,7 +19,7 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <link type="text/css" rel="stylesheet" href="css/list.css">
+  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/list.css">
 </head>
 <body>
 <div class="table-responsive">
@@ -36,7 +36,7 @@
         <div class="rankDiv col-md-4 text-center">${rank }</div>
         <div class="stateDiv col-md-4">
           <div class="imgDiv">
-            <img src="resource/images/tier_icons/${vo.tier }_${vo.division}.png"/>
+            <img src="${pageContext.request.contextPath}/WEB-INF/resource/images/tier_icons/${vo.tier }_${vo.division}.png"/>
           </div>
           <div class="textDiv text-center">
             <div>${vo.tier } ${vo.division }</div>
