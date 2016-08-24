@@ -1,0 +1,4 @@
+@CHARSET "UTF-8";
+*{margin: 0;padding: 0}
+.stateDiv .imgDiv, .textDiv{display: inline-block; float: left;}
+.stateDiv .textDiv{box-sizing: border-box;  margin-top: 60px;}
