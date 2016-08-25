@@ -19,7 +19,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>dispatcher</servlet-name>
-    <url-pattern>/</url-pattern>
+      <url-pattern>/</url-pattern>
   </servlet-mapping>
 
   <!-- JAVA의 Filter를 이용해 Spring의 EncodingFilter를 적용함. -->
