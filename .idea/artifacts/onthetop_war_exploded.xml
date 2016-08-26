@@ -9,13 +9,13 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Java EE 6-Java EE 6" />
           <element id="library" level="project" name="javax.json.processing-1.0" />
-          <element id="library" level="project" name="jstl:jstl:1.2" />
           <element id="library" level="project" name="mysql:mysql-connector-java:6.0.3" />
           <element id="library" level="project" name="org.mybatis:mybatis:3.4.1" />
           <element id="library" level="project" name="org.projectlombok:lombok:1.16.10" />
           <element id="library" level="project" name="Spring MVC-4.3.1.RELEASE" />
           <element id="library" level="project" name="Spring Web Services-2.0.2" />
           <element id="library" level="project" name="Spring-4.3.1.RELEASE" />
+          <element id="library" level="project" name="org.apache.taglibs:taglibs-standard-jstlel:1.2.5" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="onthetop/web/Web" />

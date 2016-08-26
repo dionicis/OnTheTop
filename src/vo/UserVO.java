@@ -8,7 +8,6 @@ public class UserVO {
 	private int leaguePoints;
 	private int wins;
 	private int losses;
-	private int rank;
 
 	public int getId() {
 		return id;
@@ -36,10 +35,6 @@ public class UserVO {
 
 	public int getLosses() {
 		return losses;
-	}
-
-	public int getRank() {
-		return rank;
 	}
 
 	public void setId(int id) {
@@ -70,7 +65,15 @@ public class UserVO {
 		this.losses = losses;
 	}
 
-	public void setRank(int rank) {
-		this.rank = rank;
+	public void showStatus(){
+		System.out.print("name : "+ name);
+		System.out.print("leagupoint : "+ leaguePoints);
+		System.out.print("tier : "+ tier);
+		System.out.print("division : "+ division);
+		System.out.print("wins : "+ wins);
+		System.out.print("losses : "+ losses);
+		System.out.print("id : "+ id);
+		System.out.println();
+
 	}
 }

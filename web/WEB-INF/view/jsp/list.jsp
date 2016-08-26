@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,22 +30,22 @@
       <div class="col-md-4 text-center">Name</div>
     </div>
     <c:set var="rank" value="1"/>
-    <c:forEach var="vo" items="${list }">
-
+    <c:forEach var="uvo" items="${lists }">
+        <c:set var="rate" value="${uvo.wins/(uvo.wins+uvo.losses)*100 }"></c:set>
       <div class="body row">
         <div class="rankDiv col-md-4 text-center">${rank }</div>
         <div class="stateDiv col-md-4">
           <div class="imgDiv">
-            <img src="/images/tier_icons/${vo.tier }_${vo.division}.png"/>
+            <img src="/images/tier_icons/${uvo.tier }_${uvo.division}.png"/>
           </div>
           <div class="textDiv text-center">
-            <div>${vo.tier } ${vo.division }</div>
-            <div>${vo.leaguePoints }LP / ${vo.wins }승 ${vo.losses }패</div>
+            <div>${uvo.tier } ${uvo.division }</div>
+            <div>${uvo.leaguePoints }LP / ${uvo.wins }승 ${uvo.losses }패</div>
             <div>승률 <fmt:formatNumber value="${rate+(1-(rate%1))%1 }" type="number"/>%</div>
             <div>영선님 사랑해요</div>
           </div>
         </div>
-        <div class="nameDiv col-md-4 text-center">${vo.name }</div>
+        <div class="nameDiv col-md-4 text-center">${uvo.name }</div>
         <c:set var="rank" value="${rank+1 }"/>
       </div>
     </c:forEach>
